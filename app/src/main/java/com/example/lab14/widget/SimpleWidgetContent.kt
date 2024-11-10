@@ -20,6 +20,7 @@ import androidx.glance.layout.padding
 import androidx.glance.layout.width
 import androidx.glance.text.Text
 import com.example.lab14.MainActivity
+import com.example.lab14.ProfileActivity
 
 class SimpleWidgetContent : GlanceAppWidget() {
 
@@ -52,7 +53,11 @@ class SimpleWidgetContent : GlanceAppWidget() {
                     text = "Inicio",
                     onClick = actionStartActivity<MainActivity>()
                 )
-
+                Spacer(modifier = GlanceModifier.width(8.dp))
+                Button(
+                    text = "Perfil",
+                    onClick = actionStartActivity<ProfileActivity>()
+                )
             }
         }
     }

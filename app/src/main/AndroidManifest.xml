@@ -34,7 +34,11 @@
             </intent-filter>
         </activity>
 
-        
+        <!-- ProfileActivity -->
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Lab14" />
     </application>
 
 </manifest>
